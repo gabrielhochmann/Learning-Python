@@ -25,11 +25,7 @@ print('Cos of ', x, 'is:',  math.cos(x))
 print(math.sqrt(x))
 print(math.exp(x))
 
+# import datetime
 
-"""
-Convencional Function => return one or more outputs
-Procedimento Not have a return
-
-def nome (um, dois):
-
-"""
+# help(datetime.date) 
+# dir(datetime.date)
