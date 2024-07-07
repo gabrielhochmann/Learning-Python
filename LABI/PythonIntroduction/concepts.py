@@ -25,7 +25,14 @@ print('Cos of ', x, 'is:',  math.cos(x))
 print(math.sqrt(x))
 print(math.exp(x))
 
-# import datetime
+# Others
 
-# help(datetime.date) 
-# dir(datetime.date)
+def troca(a, b):
+    a2 = b
+    b2 = a
+    return a2, b2
+
+x = 10.2
+y = 28.5
+
+print("valo")
