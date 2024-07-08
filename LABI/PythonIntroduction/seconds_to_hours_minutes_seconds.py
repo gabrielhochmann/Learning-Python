@@ -1,10 +1,19 @@
-# This program converts a given number of seconds into a time format displaying hours, minutes, and seconds.
+def convert_seconds_to_time_format():
+    try:    
+        seconds = int(input("Input the seconds here: "))
+    except ValueError:
+        print("Error: Please enter a valid integer for seconds.")
+        return
 
-seconds = int(input("Input the seconds here: "))
+    if seconds < 0:
+        print("Error: Please enter a non-negative integer for seconds.")
+        return
+    
+    hours = seconds // 3600
+    remaining_seconds = seconds % 3600
+    minutes = remaining_seconds // 60
+    remaining_seconds %= 60
 
-hours = seconds // 3600
-newsec = seconds % 3600
-minutes = newsec // 60
-newsec %= 60
-
-print(f"{seconds}s is {hours}h {minutes}min e {newsec}s")
+    print(f"{seconds}s is {hours}h {minutes}min e {remaining_seconds}s")
+    
+convert_seconds_to_time_format()

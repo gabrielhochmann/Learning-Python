@@ -16,7 +16,6 @@ def main():
 
         BMI = calculate_bmi(weight, height)
         print(f"Your BMI is {BMI:.2f}")
-
     except ValueError as e:
         print(f"Error: {e}. Please enter valid numeric values for age, weight, and height.")
 
